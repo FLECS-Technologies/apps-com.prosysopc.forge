@@ -1,19 +1,16 @@
 {
     "$schema": "https://raw.githubusercontent.com/FLECS-Technologies/app-sdk/main/manifest.schema.json",
     "_schemaVersion": "2.0.0",
-    "app": "prosysopc.forge",
+    "app": "com.prosysopc.forge",
     "version": "##VERSION##",
     "revision": "0",
     "image": "flecs.azurecr.io/",
     "multiInstance": false,
     "editor": "8080",
-    "args": [
-        "--launch-arg-1",
-        "--launch-arg-2=8000"
-    ],
+    "args": [],
     "capabilities": [],
     "conffiles": [
-        "default.data:data:rw"
+        "default.data:data"
     ],
     "devices": [],
     "env": [],
