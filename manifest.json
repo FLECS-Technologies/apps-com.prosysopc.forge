@@ -1,32 +1,24 @@
 {
     "$schema": "https://raw.githubusercontent.com/FLECS-Technologies/app-sdk/main/manifest.schema.json",
     "_schemaVersion": "2.0.0",
-    "app": "Forge",
+    "app": "prosysopc.forge",
     "version": "##VERSION##",
     "revision": "0",
-    "image": "prosysopc/forge",
+    "image": "flecs.azurecr.io/",
     "multiInstance": false,
-    "editor": "",
+    "editor": "8080",
     "args": [
         "--launch-arg-1",
         "--launch-arg-2=8000"
     ],
     "capabilities": [],
     "conffiles": [
-        "default.conf:/etc/my-app/default.conf",
-        "default.conf:/etc/my-app/default.conf:ro",
-        "default.conf:/etc/my-app/default.conf:rw"
+        "default.data:data:rw"
     ],
-    "devices": [
-        "/dev/net/tun"
-    ],
-    "env": [
-        "MY_ENV=value"
-    ],
+    "devices": [],
+    "env": [],
     "ports": [
         "56560:56560"
-        "8080:8080"
-        "8443:8443"
     ],
     "volumes": [
         "/data:/data"
