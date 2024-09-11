@@ -1,10 +1,10 @@
 {
     "$schema": "https://raw.githubusercontent.com/FLECS-Technologies/app-sdk/main/manifest.schema.json",
     "_schemaVersion": "2.0.0",
-    "app": "",
+    "app": "Forge",
     "version": "##VERSION##",
     "revision": "0",
-    "image": "flecs.azurecr.io/",
+    "image": "prosysopc/forge",
     "multiInstance": false,
     "editor": "",
     "args": [
@@ -24,11 +24,12 @@
         "MY_ENV=value"
     ],
     "ports": [
-        "12345:12345"
+        "56560:56560"
+        "8080:8080"
+        "8443:8443"
     ],
     "volumes": [
-        "my-app-etc:/etc/my-app",
-        "/var/lib/my-app:/var/lib/my-app"
+        "/data:/data"
     ],
     "labels": [
         "org.my.label",
