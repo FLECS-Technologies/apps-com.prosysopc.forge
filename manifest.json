@@ -6,7 +6,9 @@
     "revision": "0",
     "image": "flecs.azurecr.io/com.prosysopc.forge",
     "multiInstance": false,
+    "editor": ":8083",
     "ports": [
+        "8083:8080",
         "56560:56560"
     ],
     "volumes": [
