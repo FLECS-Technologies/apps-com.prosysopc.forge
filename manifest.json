@@ -4,19 +4,12 @@
     "app": "com.prosysopc.forge",
     "version": "##VERSION##",
     "revision": "0",
-    "image": "flecs.azurecr.io/",
+    "image": "flecs.azurecr.io/com.prosysopc.forge",
     "multiInstance": false,
-    "editor": "8080",
-    "args": [],
-    "capabilities": [],
-    "conffiles": [],
-    "devices": [],
-    "env": [],
     "ports": [
         "56560:56560"
     ],
     "volumes": [
         "/data:/data"
-    ],
-    "labels": []
+    ]
 }
