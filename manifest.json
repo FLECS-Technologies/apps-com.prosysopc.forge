@@ -1,14 +1,17 @@
 {
     "$schema": "https://raw.githubusercontent.com/FLECS-Technologies/app-sdk/main/manifest.schema.json",
-    "_schemaVersion": "2.0.0",
+    "_schemaVersion": "3.0.0",
     "app": "com.prosysopc.forge",
     "version": "##VERSION##",
     "revision": "0",
     "image": "flecs.azurecr.io/com.prosysopc.forge",
     "multiInstance": false,
-    "editor": ":8083",
+    "editors": [{
+        "name": "Forge",
+        "port": 8080,
+        "supportsReverseProxy": false
+    }],
     "ports": [
-        "8083:8080",
         "56560:56560"
     ],
     "volumes": [
