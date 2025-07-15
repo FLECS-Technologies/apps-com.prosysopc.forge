@@ -12,6 +12,6 @@
         "56560:56560"
     ],
     "volumes": [
-        "/data:/data"
+        "data:/data"
     ]
 }
